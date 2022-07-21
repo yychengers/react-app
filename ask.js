@@ -21,3 +21,13 @@ module.exports = [
     }
 
 ];
+
+
+
+create: {
+    alias: 'c', // 别名
+    description: '创建一个项目',
+    examples: [
+      'demo-cli create <project-name>'
+    ]
+  }
