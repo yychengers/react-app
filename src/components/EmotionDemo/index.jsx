@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import MediaQuery from './mediaQuery';
 
 const color = 'white';
 
@@ -55,6 +56,7 @@ const EmotionDemo = () => {
       <SomeComponent>
         <AnotherComponent></AnotherComponent>
       </SomeComponent>
+      <MediaQuery></MediaQuery>
     </>
   );
 };
