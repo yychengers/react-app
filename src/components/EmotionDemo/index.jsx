@@ -3,20 +3,6 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import MediaQuery from './mediaQuery';
 
-const color = 'white';
-
-const Button = styled.button`
-  padding: 32px;
-  background-color: hotpink;
-  font-size: 24px;
-  border-radius: 4px;
-  color: black;
-  font-weight: bold;
-  &:hover {
-    color: white;
-  }
-`;
-
 const styles = css`
   color: hotpink;
 `;
@@ -36,6 +22,18 @@ const AnotherComponent = () => {
   return <div css={AnotherStyles}>一些文字，带下划线</div>;
 };
 
+const BaseColor = 'yellow';
+const Button = styled.button`
+  padding: 32px;
+  background-color: hotpink;
+  font-size: 24px;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  &:hover {
+    color: white;
+  }
+`;
 const EmotionDemo = () => {
   return (
     <>
@@ -46,13 +44,14 @@ const EmotionDemo = () => {
           font-size: 24px;
           border-radius: 4px;
           &:hover {
-            color: ${color};
+            color: ${BaseColor};
           }
         `}
       >
         hover me...
         <Button>this is my button...</Button>
       </div>
+
       <SomeComponent>
         <AnotherComponent></AnotherComponent>
       </SomeComponent>

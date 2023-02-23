@@ -15,7 +15,7 @@ const useStyles = createUseStyles({
   },
 });
 
-const JssButton = ({ children, ...props }: any) => {
+const JssButtonDynamic = ({ children, ...props }: any) => {
   const classes = useStyles(props);
   return (
     <button className={classes.myButton}>
@@ -24,10 +24,10 @@ const JssButton = ({ children, ...props }: any) => {
   );
 };
 
-JssButton.defaultProps = {
+JssButtonDynamic.defaultProps = {
   spacing: 10,
   fontWeight: 'bold',
   labelColor: 'red',
 };
 
-export default JssButton;
+export default JssButtonDynamic;

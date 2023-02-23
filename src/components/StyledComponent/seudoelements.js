@@ -23,12 +23,12 @@ const Thing = styled.div.attrs((props: { tabIndex: string }) => {
 const SeudoElements = () => {
   return (
     <div>
-      <Thing tabIndex="2">Hello world!</Thing>
+      <Thing tabIndex='2'>Hello world!</Thing>
       <Thing>How ya doing?</Thing>
-      <Thing className="something">The sun is shining...</Thing>
+      <Thing className='something'>The sun is shining...</Thing>
       <div>Pretty nice day today.</div>
       <Thing>Don't you think?</Thing>
-      <div className="something-else">
+      <div className='something-else'>
         <Thing>Splendid.</Thing>
       </div>
     </div>

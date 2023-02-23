@@ -17,10 +17,10 @@ const useStyles = createUseStyles(
   },
   {
     name: 'Button',
-  },
+  }
 );
 
-const JssButton = ({ children, ...props }: any) => {
+const JssButtonPrefix = ({ children, ...props }: any) => {
   const classes = useStyles(props);
   return (
     <button className={classes.myButton}>
@@ -29,10 +29,10 @@ const JssButton = ({ children, ...props }: any) => {
   );
 };
 
-JssButton.defaultProps = {
+JssButtonPrefix.defaultProps = {
   spacing: 10,
   fontWeight: 'bold',
   labelColor: 'red',
 };
 
-export default JssButton;
+export default JssButtonPrefix;
